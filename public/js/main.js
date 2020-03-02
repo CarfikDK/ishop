@@ -1,7 +1,10 @@
 /*cart*/
 $('body').on('click', ' .add-to-cart-link', function (e) {
     e.preventDefault();
-    console.log('111');
+    var id = $(this).data('id'),
+        qty = $('.quantity input').val() ? $('.quantity input').val() : 1,
+        mod =$('.available select').val();
+    console.log(id, qty, mod);
 });
 /*cart*/
 
